@@ -5,7 +5,7 @@
 body {
   margin: 0;
   font-size: 14px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Verdana;
 }
 
 ul[class] {
@@ -24,7 +24,7 @@ button {
   border: none;
   color: white;
   font-size: 14px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Verdana;
   padding: 10px 16px;
   border-radius: 10px;
   text-align: center;
@@ -33,18 +33,30 @@ button {
   max-width: fit-content;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 input {
   margin: 5px 10px 5px 0;
-  border: 0;
   padding: 0 10px;
   line-height: 36px;
   display: inline-block;
   vertical-align: middle;
   white-space: normal;
   background: none;
-  background-color: #3cbc8d;
-  color: white;
+  background-color: #ffffff;
+  color: #000000;
   max-width: 200px;
+  border: 1px solid #cdcdcd;
+  border-radius: 7px;
+}
+
+span.sort__kind {
+  padding: 5px 15px;
+  background: #c3ef3c;
+  border-radius: 5px;
+  color: #3d3535;
 }
 
 main {
@@ -127,6 +139,14 @@ main {
   background: #cd853f;
 }
 
+.fruit_pink {
+  background: #ff19b2;
+}
+
+.fruit_red {
+  background:red;
+}
+
 .fruit__info {
   display: flex;
   justify-content: center;
@@ -135,4 +155,9 @@ main {
   background: #fff;
   height: 100%;
   padding: 10px;
+}
+
+
+.block {
+  margin-top: 50px;
 }
